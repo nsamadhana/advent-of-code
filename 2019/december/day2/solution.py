@@ -2,6 +2,7 @@ import math
 #Day 2 1202 Program Alert 
 #Target is 19690720
 nums = [int(x) for x in open("input.txt").read().split(",")]
+target = 19690720
 
 def main():
     for x in range(100):
@@ -21,7 +22,7 @@ def main():
                     assert opcode == 99 
                     break 
                 i += 4
-            if a[0] == 19690720:
+            if a[0] == target:
                 print(x, y)
                 break
 
